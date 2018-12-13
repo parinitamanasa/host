@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nearby schools in Bangalore is Knowledge International School">
+  <meta name="keywords" content="HTML, CSS, Bootstrap">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/style.css"><!--Custom CSS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-background">
+  <!--Navigation bar-->
+  <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
+    <a class="navbar-brand" href="#"><img src="images/images.png" class="img-responsive" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <section class="collapse navbar-collapse dropdown show" id="collapsibleNavbar">
+      <ul class="nav navbar-nav navbar-right nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="dropdownMenuLink" aria-haspopup="true"
+            aria-expanded="false">About</a>
+          <ul class="dropdown-menu drop_down">
+            <li><a class="dropdown-item" href="#">Primary</a></li>
+            <li><a class="dropdown-item" href="#">High-School</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">School</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="glyphicon glyphicon-search"></i>Search</button>
+      </form>
+    </section>
+  </nav>
+  <!--Image carousel section-->
+  <div class="container margin_carousel">
+    <section class="col-sm-9 row">
+      <!--Indicators for image slideshow-->
+      <section id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <section class="carousel-item active carousel-inner">
+          <img class="d-block w-100" src="images/images_slide1.jpg" alt="First slide">
+        </section>
+        <section class="carousel-item">
+          <img class="d-block w-100" src="images/image_slide3.JPG" alt="Second slide">
+        </section>
+        <section class="carousel-item">
+          <img class="d-block w-100" src="images/image_slide4.jpg" alt="third slide">
+        </section>
+      </section>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <section class="d-flex justify-content-end" style="margin-top:10px;">
+        <article>Education is the process of facilitating learning, or the acquisition of knowledge,
+          skills, values, beliefs, and habits.Educational methods include storytelling, discussion,
+          teaching, training, and directed research. Education frequently takes place under the guidance
+          of educators, but learners may also educate themselves. Education can take place in formal or
+          informal settings and any experience that has a formative effect on the way one thinks, feels,
+          or acts may be considered educational. The methodology of teaching is called pedagogy.</p>
+        </article>
+      </section>
+      <article class="d-flex justify-content-end" style="margin-top:10px;">
+        <article>Education is the process of facilitating learning, or the acquisition of knowledge,
+          skills, values, beliefs, and habits.Educational methods include storytelling, discussion,
+          teaching, training, and directed research. Education frequently takes place under the guidance
+          of educators, but learners may also educate themselves. Education can take place in formal or
+          informal settings and any experience that has a formative effect on the way one thinks, feels,
+          or acts may be considered educational. The methodology of teaching is called pedagogy.</p>
+        </article>
+    </section>
+  </div>
+  <!-- Modal -->
+  <div class="container">
+    <p style="color:indianred;font-size:20px;">Boost up your curiosity</p>
+    <h4>Winners of the contest has been announced!!</h4>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Winners</button>
+    <section id="myModal" class="modal fade" role="dialog">
+      <section class="modal-dialog">
+
+        <!-- Modal content-->
+        <section class="modal-content">
+          <section class="modal-header">
+            <h4 class="modal-title">Winner of hackathon</h4>
+          </section>
+          <section class="modal-body">
+            <p>Bill Gates from Microsoft..Congratulations!!</p>
+          </section>
+          <section class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+</div>
+  <!--Footer section using jumbotron-->
+  <footer style="margin-bottom:0; margin-top:30px;">
+    <div class="jumbotron text-color bg">
+      <h5>&copy; Knowledge International School</h5>
+      <section class="wrapper ">
+        <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-google-plus"></i></a>
+        <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-facebook-square"></i></a>
+        <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-twitter-square"></i></a>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>
